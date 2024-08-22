@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-hook</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: rgb(198 187 187);
+      }
+      .container {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        justify-content: center; /* Center children vertically */
+        height: 100vh; /* Full viewport height */
+        text-align: center; /* Center text inside the container */
+      }
+
+      /* Style for the message */
+      .hit-message {
+        margin: 0; /* Remove default margin */
+        padding: 10px;
+        font-size: 24px;
+      }
+
+      /* Style for the button */
+      .btn-hitme {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgb(148 69 69);
+        /* color: white; */
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px; /* Space between the message and button */
+        transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+      }
+      .btn-hitme:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="heading"></h1> -->
+    <div class="container">
+      <h1 class="hit-message">
+        Number of hits : <span id="hit-count">0</span>
+      </h1>
+      <button id="btn-hitme" class="btn-hitme">Hit Me</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
